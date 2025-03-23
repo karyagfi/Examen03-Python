@@ -6,6 +6,9 @@
 from lib.libro import Libro
 from lib.biblioteca import Biblioteca
 from cuenta import CuentaBancaria
+from seccion3.corregir import Coche
+from seccion3.corregir import Camioneta
+from seccion3.corregir import Conductor
 
 # persona1 = Persona("Ana", 25)
 # persona2 = Persona("Luis", 30)
@@ -53,7 +56,17 @@ from cuenta import CuentaBancaria
 # biblioteca.agregar_libro(libro3)
 # biblioteca.listar_libros()
 
-cuenta1 = CuentaBancaria("Ana", 1000)
-cuenta1.depositar(500)
-cuenta1.retirar(200)
-print(cuenta1.consultar_saldo())
+# cuenta1 = CuentaBancaria("Ana", 1000)
+# cuenta1.depositar(500)
+# cuenta1.retirar(200)
+# print(cuenta1.consultar_saldo())
+
+
+coche = Coche('Ford', 'Mustang', 'Gasolina')
+camioneta = Camioneta('Toyota', 'Hilux', 1000)
+
+conductor1 = Conductor('Carlos', coche)
+conductor2 = Conductor('Ana', camioneta)
+
+conductor1.conducir()
+conductor2.conducir()
